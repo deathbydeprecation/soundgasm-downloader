@@ -1,3 +1,3 @@
 # Soundgasm Downloader
 
-This add-on displays a "Download" button on [soundgasm.net](https://soundgasm.net) audios that allows you to download website's content.
+Download audio files from soundgasm.net. Adds a "Download" button under audio player that allows you to download audio in .mp4 format.
