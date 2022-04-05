@@ -1,9 +1,11 @@
 browser.runtime.onMessage.addListener((request) => {
+  let filename = `${request.title} - u/${request.author}.m4a`;
+
   browser.downloads
     .download({
-      url: request.url,
       saveAs: true,
-      filename: "soundgasm-audio.m4a",
+      url: request.url,
+      filename,
     })
     .catch(console.error);
 });
