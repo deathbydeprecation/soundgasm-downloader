@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
   "name": "Soundgasm Downloader",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Download audio files from soundgasm.net",
   "background": {
     "scripts": ["background-script.js"]
   },
   "content_scripts": [
     {
-      "matches": ["https://soundgasm.net/u/*/*"],
-      "js": ["content-script.js"]
+      "matches": ["https://soundgasm.net/u/*"],
+      "js": ["content-scripts/download-button.js"]
     }
   ],
   "icons": { "128": "logo.png" },
-  "permissions": ["downloads"]
+  "permissions": ["https://soundgasm.net/*", "downloads", "tabs"]
 }
