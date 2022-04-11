@@ -1,13 +1,11 @@
 (() => {
   const path_split = window.location.pathname.split("/").slice(2);
   const page_type = path_split.length == 1 ? "author" : "audio";
-  const download_button =
-    document.querySelector("button#download") ||
-    html_to_element(
-      '<button type="button" id="download"' +
-        'style="font-size: 1.2em; width: 100%; height: 2em">' +
-        "</button>"
-    );
+  const download_button = html_to_element(
+    '<button type="button" id="download"' +
+      'style="font-size: 1.2em; width: 100%; height: 2em">' +
+      "</button>"
+  );
 
   let insert_after, click_function;
   if (page_type == "author") {
